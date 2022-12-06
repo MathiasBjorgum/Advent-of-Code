@@ -1,8 +1,8 @@
+from data.data_util import get_data
 import sys
 import time
 sys.path.append(".")
 
-from data.data_util import get_data
 
 def solve(data, n_unique):
     for i in range(n_unique, len(data)):
@@ -17,7 +17,6 @@ def solve(data, n_unique):
 def main():
     data = get_data()
 
-
     # Function:
     start = time.time()
     print(solve(data, 4))
@@ -27,12 +26,12 @@ def main():
 
     # Comprehension
     start = time.time()
-    print([i for i in range(4, len(data)) if len(set(data[i-4:i])) == len(data[i-4:i])][0])
-    print([i for i in range(14, len(data)) if len(set(data[i-14:i])) == len(data[i-14:i])][0])
+    print([i for i in range(4, len(data)) if len(
+        set(data[i-4:i])) == len(data[i-4:i])][0])
+    print([i for i in range(14, len(data)) if len(
+        set(data[i-14:i])) == len(data[i-14:i])][0])
     end = time.time()
     print(end - start)
-
-
 
 
 if __name__ == "__main__":
