@@ -33,6 +33,15 @@ def main():
     end = time.time()
     print(end - start)
 
+    # Generator
+    start = time.time()
+    print(next(i for i in range(4, len(data)) if len(
+        set(data[i-4:i])) == len(data[i-4:i])))
+    print(next(i for i in range(14, len(data)) if len(
+        set(data[i-14:i])) == len(data[i-14:i])))
+    end = time.time()
+    print(end - start)
+
 
 if __name__ == "__main__":
     main()

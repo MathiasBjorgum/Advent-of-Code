@@ -4,19 +4,6 @@ from dataclasses import dataclass
 from data.data_util import get_data
 
 sys.path.append(".")
-'''
-        [M]     [B]             [N]
-[T]     [H]     [V] [Q]         [H]
-[Q]     [N]     [H] [W] [T]     [Q]
-[V]     [P] [F] [Q] [P] [C]     [R]
-[C]     [D] [T] [N] [N] [L] [S] [J]
-[D] [V] [W] [R] [M] [G] [R] [N] [D]
-[S] [F] [Q] [Q] [F] [F] [F] [Z] [S]
-[N] [M] [F] [D] [R] [C] [W] [T] [M]
- 1   2   3   4   5   6   7   8   9 
-'''
-
-NCOL = 3
 
 def get_crate_stacks(data):
     data = data.split("\n")
