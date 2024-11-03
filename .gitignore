@@ -1,1 +1,4 @@
 /advent_of_code.code-workspace
+/"Advent of Code 2022"/data
+**/data/data/**
+*.pyc
